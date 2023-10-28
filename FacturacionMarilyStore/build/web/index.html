@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sistema de Facturación</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <style>
+            .card{
+                float:left;
+                margin: 5px;               
+            }
+            .card-img-top{
+                max-height: 100px;
+                max-width: 100px;
+            }
+            body{
+                background-image: url('img/Fondo1.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="FrmListarFacturas.jsp">Facturacion</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="FrmListarVentas.jsp">Historial de ventas</a>
+                      </li>                   
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Mantenimientos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="frmClientes.jsp">Clientes</a></li>
+                          <li><a class="dropdown-item" href="frmListarProductos.jsp">Productos</a></li>
+                          <li><a class="dropdown-item" href="#">Empleados</a></li>
+                          <li><a class="dropdown-item" href="#">Historial de empleado</a></li>                     
+                        </ul>
+                      </li>                     
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <br/>
+        <div class="card" style="width: 14rem;">
+            <img src="img/Productos.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Productos</h5>
+              <p class="card-text">Mant. de productos</p>
+              <a href="frmListarProductos.jsp" class="btn btn-primary">Ir a</a>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+            <img src="img/Clientes.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Clientes</h5>
+              <p class="card-text">Mant. de Clientes</p>
+              <a href="frmClientes.jsp" class="btn btn-primary">Ir a</a>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+            <img src="img/Empleados2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Empleados</h5>
+              <p class="card-text">Mant. de Empleados</p>
+              <a href="#" class="btn btn-primary">Ir a</a>
+            </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+            <img src="img/HistorialEmpleado.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hist. Clientes</h5>
+              <p class="card-text">Informacion de Historial</p>
+              <a href="#" class="btn btn-primary">Ir a</a>
+            </div>
+        </div>       
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </body>
+    <footer class="border-top">
+        <div class="container">
+            &copy; Proyecto Web Facturacion Marily Store
+        </div>
+    </footer>
+</html>
